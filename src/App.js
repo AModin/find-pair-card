@@ -1,25 +1,20 @@
-import logo from "./logo.svg";
-import "./App.css";
+import "./styles.css";
+import { GameProvider } from "./context";
+import { GameInfo } from "./GameInfo";
+import { Buttons } from "./Buttons";
 
-function App() {
+import { CardsLayout } from "./CardsLayout";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GameProvider>
+      <div className="App">
+        <div className="container">
+          <GameInfo />
+          <CardsLayout />
+          <Buttons />
+        </div>
+      </div>
+    </GameProvider>
   );
 }
-
-export default App;

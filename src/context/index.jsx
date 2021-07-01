@@ -25,6 +25,7 @@ export const GameProvider = ({ children }) => {
     initGame(false);
     updateCards(Date.now());
     setMatched([]);
+    setTimerPause(false);
   }, []);
   useEffect(() => {
     if (matched.length === 18) {

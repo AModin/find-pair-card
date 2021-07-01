@@ -1,0 +1,176 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.empty__placeholder {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5px;
+}
+
+.scene {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  margin: 0.5px;
+  perspective: 300px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  border-radius: 3px;
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 10px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  border-radius: 9px;
+  background: #3498db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__face--back {
+  border-radius: 9px;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.start__button {
+  margin-top: 20px;
+  display: flex;
+  justify-self: flex-end;
+  border: none;
+  background: #27ae60;
+  padding: 10px 15px;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+  margin: 10px 0 15px;
+}
+
+.empty__layout {
+  width: 500px;
+  height: 500px;
+  background: #cecece;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.card__color_1 {
+  background: #ffc312;
+}
+
+.card__color_2 {
+  background: #c4e538;
+}
+
+.card__color_3 {
+  background: #12cbc4;
+}
+
+.card__color_4 {
+  background: #fda7df;
+}
+
+.card__color_5 {
+  background: #ed4c67;
+}
+
+.card__color_6 {
+  background: #f79f1f;
+}
+
+.card__color_7 {
+  background: #a3cb38;
+}
+
+.card__color_8 {
+  background: #1289a7;
+}
+
+.card__color_9 {
+  background: #d980fa;
+}
+
+.card__color_10 {
+  background: #b53471;
+}
+
+.card__color_11 {
+  background: #ee5a24;
+}
+
+.card__color_12 {
+  background: #009432;
+}
+
+.card__color_13 {
+  background: #0652dd;
+}
+
+.card__color_14 {
+  background: #9980fa;
+}
+
+.card__color_15 {
+  background: #833471;
+}
+
+.card__color_16 {
+  background: #ea2027;
+}
+
+.card__color_17 {
+  background: #006266;
+}
+
+.card__color_18 {
+  background: #1b1464;
+}
