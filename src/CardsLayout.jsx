@@ -20,7 +20,7 @@ export const CardsLayout = React.memo(() => {
                   onClick={() => setActivePair({ item, idx })}
                 >
                   <div className="card__face card__face--front">
-                    Жмякни меня {item}
+                    Жмякни меня
                   </div>
                   <div className={`card__face card__face--back card__color_${item}`}>
                     {item}
